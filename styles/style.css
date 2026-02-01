@@ -142,3 +142,143 @@ header .container {
   border: 2px solid var(--accent-purple);
   box-shadow: 0 0 10px rgba(163, 102, 255, 0.3);
 }
+
+main {
+  margin-top: 40px;
+}
+
+.dashboard__main {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 24px;
+  align-items: start;
+  max-width: 1300px;
+  margin: 40px auto;
+}
+
+.weather-now {
+  width: 100%;
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--border-light);
+  border-radius: var(--radius-main);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.weather-now__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.weather-now__city {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.weather-now__date {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.btn-location {
+  padding: 10px 20px;
+  border-radius: var(--radius-small);
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Тонкая рамка */
+  color: var(--text-white);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-location:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.weather-now__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temp-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.weather-now__temp {
+  display: flex;
+  align-items: flex-start;
+}
+
+.temp-number {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 0.8;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.temp-degree {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.weather-condition {
+  display: flex;
+  flex-direction: column;
+}
+
+.condition-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.feels-like {
+  color: var(--text-muted);
+}
+
+.sun-icon {
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "grad" 0,
+    "opsz" 48;
+  font-size: 140px;
+  color: var(--accent-purple);
+  display: block;
+  filter: drop-shadow(0 0 15px rgba(163, 102, 255, 0.4))
+    drop-shadow(0 0 40px rgba(163, 102, 255, 0.4));
+
+  line-height: 1;
+  padding: 10px;
+}
+
+.weather-now__details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.detail-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
