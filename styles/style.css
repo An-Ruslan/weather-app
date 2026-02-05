@@ -382,3 +382,117 @@ main {
   font-size: 0.8rem;
   color: var(--text-muted);
 }
+
+.dashboard__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.widget.card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+  border: var(--border-light);
+  backdrop-filter: var(--glass-blur);
+  background: var(--card-bg);
+  height: 160px;
+}
+
+.widget__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget__title {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.widget__icon {
+  font-size: 1.2rem !important;
+  color: var(--accent-purple);
+  opacity: 0.8;
+}
+
+.widget__main-val {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.widget__main-val .value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.widget__main-val .unit,
+.widget__main-val .sub-label {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.widget__main-val .sub-label {
+  color: var(--accent-purple);
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent-purple);
+  box-shadow: 0 0 10px rgba(163, 102, 255, 0.5);
+}
+
+.uv-steps {
+  display: flex;
+  gap: 6px;
+}
+
+.uv-steps .step {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.uv-steps .step.active {
+  background: var(--accent-purple);
+}
+
+.widget__footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-purple);
+}
+
+.compass {
+  font-size: 1rem !important;
+  transform: rotate(-45deg);
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+}
