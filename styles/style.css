@@ -398,7 +398,6 @@ main {
   border: var(--border-light);
   backdrop-filter: var(--glass-blur);
   background: var(--card-bg);
-  height: 160px;
 }
 
 .widget__header {
@@ -428,7 +427,7 @@ main {
 }
 
 .widget__main-val .value {
-  font-size: 32px;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
